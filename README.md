@@ -1,2 +1,2 @@
-# Flight-Status-Repo
+# Flight Status Repo
 Tracks the status of a flight
