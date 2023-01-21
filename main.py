@@ -5,7 +5,8 @@ html_text = requests.get('https://www.flysafair.co.za/travel-tools/flight-status
 
 soup = BeautifulSoup(html_text, 'lxml')
 
-flights = soup.find_all('tr')
+flight_list = soup.find('tbody')
+flights = flight_list.find_all('tr')
 
 for flight in flights:
     print(flight.text)
