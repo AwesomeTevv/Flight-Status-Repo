@@ -9,4 +9,4 @@ flight_list = soup.find('tbody')
 flights = flight_list.find_all('tr')
 
 for flight in flights:
-    print(flight.text)
+    print(flight)
